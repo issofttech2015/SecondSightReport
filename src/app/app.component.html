@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to Reort Services of Link Xeon!!!
+  </h1>
+</div>
+<div style="text-align:center">
+  <h2>
+    {{details.heading}}
+  </h2>
+</div>
+<div class="grid-container">
+  <dx-data-grid id="gridContainerReport" #gridContainerReport [dataSource]="deferredDetailStore" [showBorders]="true" [columns]="details.columnForDisplay"
+      [showColumnLines]="false" (onCellClick)="onCellClickHandler($event)" [allowColumnResizing]="true" noDataText="No Data" (onKeyDown)="onKeyDownEventGrid($event)"
+      (onContentReady)="onContentReadyHandler($event)">
+      <dxo-column-chooser [enabled]="true"></dxo-column-chooser>
+      <dxo-export [enabled]="true" [fileName]="details.exportFileName" [allowExportSelectedData]="false"></dxo-export>
+      <dxo-load-panel [enabled]="false"></dxo-load-panel>
+      <dxo-scrolling mode="infinite"></dxo-scrolling>
+      <dxo-selection mode="none" showCheckBoxesMode="none" deferred="true" allowSelectAll="false"></dxo-selection>
+      <dxo-filter-row [visible]="true"></dxo-filter-row>
+      <dxo-header-filter [visible]="true" [height]="200" [width]="250"></dxo-header-filter>
+    </dx-data-grid>
+</div>

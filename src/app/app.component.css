@@ -1,0 +1,71 @@
+.grid-container{
+    /* min-width:350px; */
+    height:calc(100% - 38px);
+  }/* ============== Grid ================ */
+
+#gridContainerReport {
+    height: 100%;
+    /* background-color:transparent; */
+    background-color: #FFFCDF;
+    background-color: #ffffff;
+    }
+  
+  ::ng-deep #gridContainerReport .dx-datagrid{
+    background-color: #FFFCDF; 
+    background-color: #ffffff; 
+  }
+  
+  ::ng-deep #gridContainerReport .dx-datagrid-nowrap.dx-datagrid-headers .dx-header-row > td > .dx-datagrid-text-content{
+    font-size: 14px!important;
+    color: black;
+    color: white;
+    font-weight: 400;
+    margin-top: -4px;
+    white-space: nowrap;
+  }
+  
+  ::ng-deep #gridContainerReport .dx-datagrid-headers .dx-datagrid-table .dx-row > td {
+    border-bottom: 0px solid #ddd;
+    padding-bottom: 0px;
+  }
+  
+  ::ng-deep #gridContainerReport .dx-datagrid-borders .dx-datagrid-headers .dx-datagrid-table {
+    border-bottom-width: 1px;
+    background-color: #FFF1A8;
+    background-color: #7f143d;
+    color: #FFFFFF;
+  }
+  
+  ::ng-deep#gridContainerReport .dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-menu {
+    display: none;
+  }
+  
+  ::ng-deep#gridContainerReport .dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-texteditor-input, .dx-datagrid-filter-row .dx-editor-cell .dx-editor-with-menu .dx-placeholder {
+    /* padding: 12px 0px 14px 2px; */
+    border-radius: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 450;
+  }
+  ::ng-deep#gridContainerReport .dx-datagrid-rowsview .dx-row {
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;  
+    font-weight: 400;
+    height: 54px;
+  }
+  
+  ::ng-deep#gridContainerReport .dx-datagrid-content .dx-datagrid-table .dx-row .dx-texteditor{ 
+    caret-color: black;
+    caret-color: #FFFFFF;
+    /* caret-color: rgb(167, 161, 161); */
+    border-bottom: 4px solid #7f143d;
+    border-bottom-style: ridge;
+    border-radius: 0px;
+  }
+  
+        
+        
+  
+        
+  
